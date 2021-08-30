@@ -7293,6 +7293,12 @@ export interface AccessibilityInfoStatic {
      * Post a string to be announced by the screen reader.
      */
     announceForAccessibility: (announcement: string) => void;
+    
+    /**
+     * Gets the timeout in millisecond that the user needs.
+     * This value is set in "Time to take action (Accessibility timeout)" of "Accessibility" settings.
+     */
+    getRecommendedTimeoutMillis: (originalTimeout: number) => void;
 }
 
 /**
